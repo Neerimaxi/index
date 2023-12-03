@@ -1,0 +1,475 @@
+/*Pour ordinateur*/
+@media only screen and (min-width: 1251px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: row;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #header {
+        background-color: #141515;
+        width: 100vw;
+        padding: 10px;
+        font-size: 28px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #header a {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    #sectionGauche {
+        background-color: #434444;
+        color: #fff;
+        text-align: left;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        width: 25vw;
+        flex-wrap: wrap;
+    }
+
+    #sectionDroite {
+        background-color:rgb(169, 162, 158);
+        margin-left: 25vw;
+        text-align: left;
+        padding: 20px;
+        position: fixed;
+        width: 75vw;
+        height: 90%;
+        overflow: auto;
+        text-wrap:wrap ;
+        flex-direction:column;
+        justify-content:space-around;
+    }
+
+    #section-experiences {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #section-etudes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #section-technologie {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #section-langues {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #section-loisirs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+/*La répétition ci dessus n'est pas top, vérifie si tu peux éviter cela. */
+
+    #liste-cartes{
+        width:100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    .card{
+        height: 120px;
+        width:120px;
+        background-color: aquamarine;
+        margin: 5px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        border: 2px black;
+        object-fit: cover;
+    }
+
+    .card-sectiongauche1{
+        width:80%;
+        background-color: rgb(229, 236, 230);
+        color: black;
+        margin: 5px;
+        text-align: center;
+        text-wrap:wrap ;
+        border:#141514 2px solid;
+        display: block;
+    }
+
+    .card-sectiongauche2{
+        width:80%;
+        background-color: rgb(229, 236, 230);
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        border:red 4px solid;
+        margin: 5px;
+        text-align: center;
+        text-wrap:wrap ;
+    }
+
+    .progress-container {
+        width: 110px;
+        height: 30px;
+        border: 1px solid black;
+        position: relative;
+        left: 5px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+    }
+
+    .progress-container1 {
+        width: 110px;
+        height: 30px;
+        border: 1px solid black;
+        position: relative;
+        left: 5px;
+    }
+    
+    .progress-bar1 {
+        height: 100%;
+        width: 0;
+        background-color: red;
+    }
+
+    .photo {
+        width:80%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .anderlecht{
+        width: 110px;
+        position: relative;
+        left: 20px;
+    }
+
+    .anderlecht > img{
+        display:block;
+        height: 100%;
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+/*Pour smartphones*/
+@media only screen and (max-width: 600px) {
+    #header {
+        background-color: #141515;
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .photo {
+        width:360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sectionGauche{
+        background-color: #434444;
+        color: #fff;
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #sectionDroite{
+        background-color:rgb(169, 162, 158);
+        color: black;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #section-experiences {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-technologie {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-etudes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-langues {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #section-loisirs {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #liste-cartes{
+        width:100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    .card{
+        width:47vw;
+        background-color: aquamarine;
+        text-align: center;
+        border: 1vw solid black;
+        display: inline-block;
+        object-fit: cover;
+    }
+
+    .card-sectiongauche1{
+        width:95vw;
+        background-color: rgb(229, 236, 230);
+        color: black;
+        text-align: center;
+        text-wrap:wrap ;
+        border:#141514 2vw solid;
+        justify-content: space-around;
+    }
+        
+    .card-sectiongauche2{
+        width:94vw;
+        background-color: rgb(130, 135, 131);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: red;
+        text-align: center;
+        text-wrap:wrap ;
+        flex-wrap: wrap;
+        border: red 3vw solid;
+        justify-content: space-around;
+    }
+        
+    .progress-container {
+        width: 140px;
+        height: 30px;
+        border: 1px solid black;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+        
+    .progress-bar {
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+    }
+        
+    .progress-container1 {
+        width: 140px;
+        height: 30px;
+        border: 1px solid black;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+            
+    .progress-bar1 {
+        height: 100%;
+        width: 0;
+        background-color: red;
+    }
+        
+    .anderlecht{
+        width: 100%;   
+    }
+        
+    .anderlecht > img{
+        display:block;
+        height: auto;
+        width: 50%;
+        text-align: center;
+        margin-left: 40px;
+    }
+}
+
+/*Pour tablettes */
+@media only screen and (min-width: 601px) and (max-width: 1250px) {
+
+    #header {
+        background-color: #141515;
+        width: 100vw;
+        padding: 10px;
+        font-size: 28px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #header a {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    
+    #sectionGauche{
+        background-color: #434444;
+        color: #fff;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+ 
+/*Le positionement photo - nom - description ne se positionnent pas comme
+demandé dans le template. Il s'agit d'un problème de flexbox et de non utilisation
+de row-reverse. Je devrais recommencer en redéfinissant plus clairement mon container
+et mes contenus */
+
+    .photo{
+        width:50vw;
+        display: inline-block;
+    }
+
+    .card-sectiongauche1{
+        width:50vw;
+        background-color: rgb(229, 236, 230);
+        color: black;
+        text-align: center;
+        text-wrap:wrap ;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: inline-block;
+    }
+        
+    .card-sectiongauche2{
+        width:50vw;
+        background-color: rgb(130, 135, 131);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: red;
+        text-align: center;
+        text-wrap:wrap ;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: inline-block;
+    }
+
+    #sectionDroite{
+        background-color:rgb(169, 162, 158);
+        color: black;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #section-experiences {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-technologie {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-etudes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-langues {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #section-loisirs {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #liste-cartes{
+        width:100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    
+    .card{
+        width:25vw;
+        background-color: aquamarine;
+        text-align: center;
+        border: 1vw solid black;
+        display: inline-block;
+        object-fit: cover;
+    }
+        
+    .progress-container {
+        width: 140px;
+        height: 30px;
+        border: 1px solid black;
+        margin-left: 60px;
+        margin-bottom: 5px;
+    }
+        
+    .progress-bar {
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+    }
+        
+    .progress-container1 {
+        width: 140px;
+        height: 30px;
+        border: 1px solid black;
+        margin-left: 60px;
+        margin-bottom: 5px;
+    }
+            
+    .progress-bar1 {
+        height: 100%;
+        width: 0;
+        background-color: red;
+    }
+        
+    .anderlecht{
+        width: 100%;   
+    }
+        
+    .anderlecht > img{
+        display:block;
+        height: auto;
+        width: 50%;
+        text-align: center;
+        margin-left: 40px;
+    }
+}
+    
